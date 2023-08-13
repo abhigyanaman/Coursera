@@ -1,32 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Website</title>
+  <head>
+    <title>Module 2 assignment</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+  </head>
+
 <body>
-    <header>
-        <h1>Delicious Food Menu</h1>
-    </header>
+<header>
+    <h1>Our Menu</h1>
+</header>
 
-    <div class="container">
-        <section class="section">
-            <h2 class="section-title">Chicken</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
-        
-        <section class="section">
-            <h2 class="section-title">Beef</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
-        
-        <section class="section">
-            <h2 class="section-title">Sushi</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
-    </div>
+<!-- 
+A] Three are 3 containers i have created
+1. the row class: with width 100%
+2. the col class : for media queries...the responsive layout container for resizing as per the screen size [no padding margins here only percents] 
+3. the contr class : here the section container (gray background) is placed and all the padding/margins are made to make them look apart
+	this is the class that contains the <p> and the heading <h2>
+B] Negative margins and relative postioning used for h2
+-->
 
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-11">
+  <div class="contnr">
+  <h2 class='chicken'>Chicken</h2>
+  <p>This is the text for chicken Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam voluptas alias tenetur delectus itaque voluptates vitae, voluptatem eos molestias pariatur?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos saepe natus adipisci incidunt ducimus maxime obcaecati ratione at fugit pariatur!</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-11">
+  <div class="contnr">
+  <h2 class = "beef">Beef</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor veniam tenetur magni recusandae provident quibusdam voluptates nesciunt porro ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit dicta ad ipsa, eligendi eum accusantium officia alias assumenda tempora fugit.
+  </p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-12 col-sm-11">
+  <div class="contnr">
+  <h2 class="sushi">Sushi</h2>
+  <p>If you want to order sushi here pisicing elit. Ducimus eum voluptatum temporibus repellat quam, deleniti amet consectetur quod laboriosam optio. Earum aut optio sit harum fugiat deleniti deserunt asperiores provident rerum? Quo explicabo pariatur id dolores molestias natus sint quaerat!</p>
+  </div>
+  </div>
+</div>
 </body>
-</html>
